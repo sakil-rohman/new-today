@@ -21,7 +21,10 @@
     transition: 0.5s;
     z-index: 99;
 }
-
+/* ================== top nav========== */
+.top_email{
+    font-size: 16px;
+}
 
 /*** Button Start ***/
 .btn {
@@ -148,13 +151,30 @@
     display: flex;
     align-items: center;
     padding: 15px;
+    margin: 0 2px;
 }
 
 .navbar-light .navbar-nav .nav-item:hover,
 .navbar-light .navbar-nav .nav-item.active,
 .navbar-light .navbar-nav .nav-item:hover .nav-link,
 .navbar-light .navbar-nav .nav-item.active .nav-link {
-    color: var(--bs-primary);
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    -webkit-border-radius: 7;
+    -moz-border-radius: 7;
+    border-radius: 7px;
+    -webkit-box-shadow: 0px 1px 3px #666666;
+    -moz-box-shadow: 0px 1px 3px #666666;
+    box-shadow: 0px 1px 3px #666666;
+    font-family: Arial;
+    color: #ffffff;
+    /* font-size: 20px; */
+    /* padding: 10px 20px 10px 20px; */
+    text-decoration: none;  
 }
 
 @media (max-width: 991px) {
@@ -221,7 +241,7 @@
     }
 
     .navbar .navbar-nav {
-        width: 100%;
+        width: 95%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -309,6 +329,7 @@
     align-items: center;
 }
 
+
 @media (max-width: 991px) {
     .header-carousel .header-carousel-item .carousel-caption {
         padding-top: 45px;
@@ -338,10 +359,49 @@
         margin-left: 45px;
     }
 }
+/* Ensure the video covers the entire area */
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 211%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Ensure the carousel-caption content is displayed over the video */
+.carousel-caption2 {
+    position: relative;
+    z-index: 2;
+}
+
+/* Optional: to give a subtle overlay effect */
+ .carousel-caption2::before {
+       position: absolute;
+    /* right: 15%; */
+    /* bottom: 1.25rem; */
+    /* left: 15%; */
+    padding-top: 7.25rem;
+    padding-bottom: 5.25rem;
+    color: #fff;
+    text-align: center;
+} 
+.animited_text{
+    padding-top: 169px;
+}
+.welcome_text{
+    font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 /*** Carousel Hero Header End ***/
 
 
 /*** Single Page Hero Header Start ***/
+.bg-light-blue {
+    background-color: #c0d3ec !important;
+}
 .bg-breadcrumb {
     position: relative;
     overflow: hidden;
@@ -797,7 +857,8 @@
 
 /*** Footer Start ***/
 .footer {
-    background: var(--bs-dark);
+    background: #305b5b;
+    ;
 }
 
 .footer .footer-item {
@@ -807,7 +868,7 @@
 
 .footer .footer-item a {
     line-height: 35px;
-    color: var(--bs-body);
+    color: #fff;;
     transition: 0.5s;
 }
 
@@ -881,7 +942,7 @@
 
 /*** copyright Start ***/
 .copyright {
-    background: var(--bs-dark);
+    background: #213e3e;
     border-top: 1px solid rgba(255, 255, 255, .08);
 }
 /*** copyright end ***/
