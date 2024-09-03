@@ -77,6 +77,39 @@
             }
         }
     });
+    // team carousel
+    $(".team-carousel").owlCarousel({
+        autoplay: true,
+        smartSpeed: 1500,
+        center: false,
+        dots: false,
+        loop: true,
+        margin: 25,
+        nav: true,
+        navText: [
+            '<i class="fa fa-arrow-left"></i>',
+            '<i class="fa fa-arrow-right"></i>'
+        ],
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            576: {
+                items: 1
+            },
+            768: {
+                items: 1
+            },
+            992: {
+                items: 1
+            },
+            1200: {
+                items: 1
+            }
+        }
+    });
+    
 
 
     // Facts counter
